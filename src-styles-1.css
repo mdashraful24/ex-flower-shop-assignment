@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section Starts */
+.banner-container {
+    /* width: 100%; */
+    max-width: 1920px;
+    height: 850px;
+    /* margin: 0 auto; */
+    background-color: rgba(229, 84, 115, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.banner-content {
+    /* border: 2px solid red; */
+    max-width: 708px;
+    margin: 0 20px;
+    /* margin-left: 120px; */
+}
+
+.banner-content h3 {
+    /* border: 2px solid blue; */
+    color: rgb(39, 39, 39);
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.banner-content p {
+    /* border: 2px solid purple; */
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.banner-content input {
+    width: 177px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.banner-image img {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* margin-right: 120px; */
+}
+
+@media screen and (max-width: 576px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .banner-content {
+        max-width: 90%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .banner-content h3 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .banner-content input {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+/* Header Section ends */
+
+
+/* Featured Section Starts */
+.featured-container {
+    /* border: 2px solid red; */
+    width: 1030px;
+    height: 150px;
+    /* margin:  0 auto; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.featured-container h3 {
+    color: rgb(39, 39, 39);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.featured-container p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.featured-content {
+    /* border: 2px solid rebeccapurple; */
+    width: 1030px;
+    height: 450px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.flower-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.graphis-1 {
+    /* border: 2px solid rebeccapurple; */
+    background-color: rgba(167, 33, 98, 0.15);
+
+    height: 65%;
+    display: flex;
+    /* align-items: end; */
+    justify-content: center;
+
+    padding: 30px;
+    border-radius: 50% 50% 0 0;
+}
+
+.graphis-2 {
+    /* border: 2px solid rebeccapurple; */
+    background-color: rgba(5, 151, 160, 0.15);
+
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    border-radius: 50% 50% 0 0;
+}
+
+.graphis-3 {
+    /* border: 2px solid rebeccapurple; */
+    background-color: rgba(71, 125, 17, 0.15);
+
+    height: 65%;
+    display: flex;
+    /* align-items: end; */
+    justify-content: center;
+
+    padding: 30px;
+    border-radius: 50% 50% 0 0;
+}
+
+.flower-size {
+    height: 110%;
+}
+
+.box-size {
+    width: 330px;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(39, 39, 39);
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+
+    .featured-container,
+    .featured-content {
+        width: auto;
+        margin-left: 0;
+        padding: 38px;
+        margin-top: 80px;
+    }
+
+    .flower-cards {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 100%;
+    }
+
+}
